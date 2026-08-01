@@ -9,7 +9,7 @@ class OracleClient:
         self.dsn = dsn
         self.conexion = None
 
-    def conectar(self):
+    def connect(self):
         """Establece la conexión física con el servidor Oracle."""
         try:
             if not self.conexion:
@@ -25,9 +25,9 @@ class OracleClient:
             print(f"❌ Error al conectar a Oracle: {e}")
             sys.exit(1)
 
-    def ejecutar_consulta(self, query, parametros=None):
+    def select(self, query, parametros=None):
         """Ejecuta una consulta de lectura (SELECT) y devuelve los resultados."""
-        self.conectar()
+        self.connect()
         try:
             with self.conexion.cursor() as cursor:
                 if parametros:
@@ -41,7 +41,7 @@ class OracleClient:
 
     def execute(self, query, parametros=None):
         """Ejecuta una acción de escritura (INSERT, UPDATE, DELETE, CREATE)."""
-        self.conectar()
+        self.connect()
         try:
             with self.conexion.cursor() as cursor:
                 if parametros:
