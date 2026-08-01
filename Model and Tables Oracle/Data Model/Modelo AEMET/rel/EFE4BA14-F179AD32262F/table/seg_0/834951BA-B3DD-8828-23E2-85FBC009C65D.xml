@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="834951BA-B3DD-8828-23E2-85FBC009C65D" name="METEOR_CENTER">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:15:53 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CENTER" id="3A8670FC-613D-47DB-1B78-27312577154B">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:37:20 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementMaxValue>9999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SECID_CENTER</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRIG_ID_CENTER</autoIncrementTriggerName>
+</Column>
+<Column name="ID_MUN" id="C1CD05C9-0899-DB7C-DD7A-3C2A704A96C0">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:40:14 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFFE6D6C-C532-80C1-A5C4-82E77658A3AD" referredColumn="696D75F3-D8F0-9532-7737-B95C591B7DBA"/>
+</associations>
+</Column>
+<Column name="DATE_START" id="212BBA64-1EA2-6C99-FB3F-4532B1EA0C40">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:37:20 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_END" id="3D8600CB-E94A-4560-7D84-8659920AA35B">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:37:20 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAM_CENTER" id="D4ED5A03-E7E5-ADA9-08BB-DC42DF9F6193">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:37:20 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_CENTER_STAT" id="D8817C12-5B39-F5F6-A532-AEB54331411D">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:39:20 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB3AAB60-6446-3867-9913-BB8BB7A27FC0" referredColumn="FEC446EC-7668-A783-CDFA-FDE24518C6D3"/>
+</associations>
+</Column>
+<Column name="NUM_LATITUDE" id="DE824A23-ABFA-1503-F691-4AF1F13A1EFF">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:48:55 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_LONGITUDE" id="99BB7FC4-62A4-BF9E-476B-A64400CD8C36">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:48:55 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_ELEVATION" id="F7289B07-85A8-D78C-3445-7CD835AD6F4D">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:48:55 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_OPRTN_INSERT" id="B3878B07-5412-7D8F-8CB9-A5DB9634BD27">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:50:30 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3CEE977-0328-2E75-AF5C-524159334EA9" referredColumn="51F6867B-A9AF-CA94-86A6-5E39F7D3F810"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C989C368-687B-BEC8-DCDE-29B0B262E417" name="METEOR_CENTER_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:37:20 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A8670FC-613D-47DB-1B78-27312577154B"/>
+<colUsage columnID="C1CD05C9-0899-DB7C-DD7A-3C2A704A96C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="421A8AB0-2458-5954-C25B-980D0712EB14" name="METEOR_CENTER_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:41:07 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A8670FC-613D-47DB-1B78-27312577154B"/>
+<colUsage columnID="C1CD05C9-0899-DB7C-DD7A-3C2A704A96C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1785535E-AB48-EF5C-EDF1-6B146DB77F97" name="METEOR_CENTER_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:39:20 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8817C12-5B39-F5F6-A532-AEB54331411D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82EA8E2B-22B3-9B27-3C42-3BDAC8E7FE43" name="METEOR_CENTER_FK2">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:40:14 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1CD05C9-0899-DB7C-DD7A-3C2A704A96C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A30D301F-46DB-8103-E442-00342C8491DB" name="METEOR_CENTER_DATE_OPRTN_INSERT_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:50:30 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3878B07-5412-7D8F-8CB9-A5DB9634BD27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

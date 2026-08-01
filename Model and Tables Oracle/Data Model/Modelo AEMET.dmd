@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo AEMET" id="255E8349-FDE8-0828-0795-8814A4E8F16E" version="3.5">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:12:58 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>255E8349-FDE8-0828-0795-8814A4E8F16E</designId>
+</OSDM_Design>

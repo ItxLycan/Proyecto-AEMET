@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A72DC0C3-22E7-D7CA-26EA-FB1DAC99644A" containerWithKeyObject="AA512EFD-A11A-B160-2EE8-C5A0BE11303C" localFKIndex="5CA8141A-D80C-9B5D-E1E5-C8AC24DC04DF" name="TIME_REPORT_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:52:43 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<referredTableLongName>METEOR_CENTER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>834951BA-B3DD-8828-23E2-85FBC009C65D</referredTableID>
+<keyObject>C989C368-687B-BEC8-DCDE-29B0B262E417</keyObject>
+<referredKeyID>C989C368-687B-BEC8-DCDE-29B0B262E417</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CENTER,ID_MUN</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="01EE299F-CEE4-1BDE-F2F9-2C812EAC79A5" containerWithKeyObject="27258A3B-C8ED-B6E0-4404-5D44FE7FD9DF" localFKIndex="200420FD-4822-5A5A-C614-8D067EA73D8D" name="AUT_COMM_DATE_OPRTN_INSERT_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:44:51 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<referredTableLongName>DATE_OPRTN_INSERT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>46663913-BB9B-FD09-7CAD-3F00597EF38D</referredTableID>
+<keyObject>F94C8813-AECC-45E3-427F-07C3A35F8DB0</keyObject>
+<referredKeyID>F94C8813-AECC-45E3-427F-07C3A35F8DB0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DATE_OPRTN_INSERT</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

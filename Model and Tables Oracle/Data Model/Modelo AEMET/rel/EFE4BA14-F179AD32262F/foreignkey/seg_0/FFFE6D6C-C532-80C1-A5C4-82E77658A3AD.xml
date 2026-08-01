@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FFFE6D6C-C532-80C1-A5C4-82E77658A3AD" containerWithKeyObject="834951BA-B3DD-8828-23E2-85FBC009C65D" localFKIndex="82EA8E2B-22B3-9B27-3C42-3BDAC8E7FE43" name="METEOR_CENTER_FK2">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:40:14 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<referredTableLongName>MUNICIPALITIES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>50AD6A9F-788F-462E-623F-8CBD9D69836F</referredTableID>
+<keyObject>E87BAEF0-D5BF-1086-E824-4CD5BED4C934</keyObject>
+<referredKeyID>E87BAEF0-D5BF-1086-E824-4CD5BED4C934</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MUN</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

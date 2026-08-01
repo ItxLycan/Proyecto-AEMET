@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="EFE4BA14-F5DE-54CB-9382-F179AD32262F" mainViewID="1A811D19-E243-1E1B-E78A-99BC047797AF">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:13:48 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

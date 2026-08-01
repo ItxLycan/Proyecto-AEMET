@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="27258A3B-C8ED-B6E0-4404-5D44FE7FD9DF" name="AUT_COMM">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:15:09 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_COMM" id="003DD60D-E650-8B9F-3FDC-DBF7C624493B">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:17:56 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementMaxValue>17</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SECID_COMM</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRIG_ID_COMM</autoIncrementTriggerName>
+</Column>
+<Column name="NAM_COMM" id="584C6B6D-FCAE-9928-AF90-0FDF335F0F22">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:17:56 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_OPRTN_INSERT" id="A9B7B8C7-408B-4B1A-1862-CFAF72271C9D">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:44:51 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01EE299F-CEE4-1BDE-F2F9-2C812EAC79A5" referredColumn="51F6867B-A9AF-CA94-86A6-5E39F7D3F810"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD80554B-CFFB-13DD-01EC-37393A4C0521" name="AUT_COMM_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:17:56 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="003DD60D-E650-8B9F-3FDC-DBF7C624493B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="033CABA3-1D9D-D2DD-8DE9-81C7AF2D53D3" name="AUT_COMM_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:17:56 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="003DD60D-E650-8B9F-3FDC-DBF7C624493B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="200420FD-4822-5A5A-C614-8D067EA73D8D" name="AUT_COMM_DATE_OPRTN_INSERT_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:44:51 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9B7B8C7-408B-4B1A-1862-CFAF72271C9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

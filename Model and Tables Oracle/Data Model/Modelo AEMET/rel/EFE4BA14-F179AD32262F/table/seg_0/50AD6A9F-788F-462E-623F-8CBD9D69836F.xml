@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50AD6A9F-788F-462E-623F-8CBD9D69836F" name="MUNICIPALITIES">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:15:44 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MUN" id="696D75F3-D8F0-9532-7737-B95C591B7DBA">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:27:14 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementMaxValue>8132</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SECID_MUN</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRIG_ID_MUN</autoIncrementTriggerName>
+</Column>
+<Column name="ID_PROV" id="858FA4CE-9382-BB3E-898D-D5448549B8D9">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:28:50 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97721EFB-11A5-9FF4-1EF7-C40352F2BC20" referredColumn="98361F55-E646-E5B1-3CA3-D52CAA0E750E"/>
+</associations>
+</Column>
+<Column name="NAM_MUN" id="9D8744AF-2366-266F-693F-30A1EC010338">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:27:14 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_OPRTN_INSERT" id="62438AF2-EB4A-DEC2-D240-0AAA6618E99E">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:46:32 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="767BB64B-6177-948B-297B-74BB525A79FF" referredColumn="51F6867B-A9AF-CA94-86A6-5E39F7D3F810"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E87BAEF0-D5BF-1086-E824-4CD5BED4C934" name="MUNICIPALITIES_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:27:14 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="696D75F3-D8F0-9532-7737-B95C591B7DBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77B13FF3-091A-43CF-04B6-66A14E404CE7" name="MUNICIPALITIES_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:31:10 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="696D75F3-D8F0-9532-7737-B95C591B7DBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81BACCE7-4813-47B4-FB50-B884DFEC8345" name="MUNICIPALITIES_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:28:50 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="858FA4CE-9382-BB3E-898D-D5448549B8D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A17EE08-DD1C-BC1C-C5A3-0E414D01A031" name="MUNICIPALITIES_DATE_OPRTN_INSERT_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:46:32 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62438AF2-EB4A-DEC2-D240-0AAA6618E99E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

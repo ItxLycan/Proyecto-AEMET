@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="411BE44D-BFB9-BAED-A999-B10929A3CAD8" containerWithKeyObject="AE8C86D7-93EE-2930-0D1A-C18666A79176" localFKIndex="79B5ECB9-3796-C966-BF4B-84002DD572D3" name="AUT_COMM_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:20:17 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<referredTableLongName>AUT_COMM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>27258A3B-C8ED-B6E0-4404-5D44FE7FD9DF</referredTableID>
+<keyObject>AD80554B-CFFB-13DD-01EC-37393A4C0521</keyObject>
+<referredKeyID>AD80554B-CFFB-13DD-01EC-37393A4C0521</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_COMM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE8C86D7-93EE-2930-0D1A-C18666A79176" name="PROVINCE">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:15:37 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROV" id="98361F55-E646-E5B1-3CA3-D52CAA0E750E">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:20:07 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementMaxValue>50</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SECID_PROV</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRIG_ID_PROV</autoIncrementTriggerName>
+</Column>
+<Column name="ID_COMM" id="F26E1D38-758B-94F3-2D41-257B8960B305">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:20:17 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="411BE44D-BFB9-BAED-A999-B10929A3CAD8" referredColumn="003DD60D-E650-8B9F-3FDC-DBF7C624493B"/>
+</associations>
+</Column>
+<Column name="NAM_PROV" id="842B0C97-58BB-C446-322A-8D0CF7E0F4F0">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:20:07 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_OPRTN_INSERT" id="EEB5BA7C-774A-8D4C-C43D-582C47ED79C3">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:45:57 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1D42A58-0DD3-4825-6D85-1C1C85D0CDA8" referredColumn="51F6867B-A9AF-CA94-86A6-5E39F7D3F810"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85DDB95F-3992-6F7E-4F70-6EA7515B8257" name="PROVINCE_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:20:07 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98361F55-E646-E5B1-3CA3-D52CAA0E750E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="931087D8-8B56-9359-1A4C-89800743645D" name="PROVINCE_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:20:07 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98361F55-E646-E5B1-3CA3-D52CAA0E750E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79B5ECB9-3796-C966-BF4B-84002DD572D3" name="AUT_COMM_FK1">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:20:17 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F26E1D38-758B-94F3-2D41-257B8960B305"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D12502A0-AF15-4777-B132-8AC80FCA1D0E" name="PROVINCE_DATE_OPRTN_INSERT_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:45:57 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEB5BA7C-774A-8D4C-C43D-582C47ED79C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

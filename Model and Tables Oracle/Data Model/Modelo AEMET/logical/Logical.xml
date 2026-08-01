@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="E8BC0162-4183-9595-BB07-C22A591BCE71" mainViewID="07FACAF6-17E3-889C-F5B4-5EA317EC9B1D">
+<createdBy>Usuario</createdBy>
+<createdTime>2026-07-31 17:12:58 UTC</createdTime>
+<ownerDesignName>Modelo AEMET</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
