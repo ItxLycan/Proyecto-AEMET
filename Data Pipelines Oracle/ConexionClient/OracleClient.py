@@ -1,12 +1,15 @@
 import oracledb
 import sys
+import os
+from dotenv import load_dotenv
 
+load_dotenv()  
 class OracleClient:
     def __init__(self):
         """Inicializa los parámetros de configuración de la base de datos."""
-        self.user = "aemet"
-        self.password = "12345"
-        self.dsn = "localhost:1521/XE"
+        self.user = os.getenv("ORACLE_USER")
+        self.password = os.getenv("ORACLE_PASSWORD")
+        self.dsn = os.getenv("ORACLE_DSN")
         self.conexion = None
 
     def connect(self):

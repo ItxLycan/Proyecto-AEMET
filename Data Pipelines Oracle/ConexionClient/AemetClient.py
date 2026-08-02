@@ -1,9 +1,13 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 class AemetClient:
     def __init__(self):
         """Inicializa el cliente con la API Key global."""
-        self.api_key = "***REMOVED***"
+        self.api_key = os.getenv("AEMET_API_KEY")
         self.headers = {
             'cache-control': 'no-cache',
             'api_key': self.api_key
