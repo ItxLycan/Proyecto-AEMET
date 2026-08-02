@@ -1,0 +1,78 @@
+[
+  {
+    "id_aemet_comm": "and",
+    "nam_comm": "Andalucía"
+  },
+  {
+    "id_aemet_comm": "arn",
+    "nam_comm": "Aragón"
+  },
+  {
+    "id_aemet_comm": "ast",
+    "nam_comm": "Principado de Asturias"
+  },
+  {
+    "id_aemet_comm": "bal",
+    "nam_comm": "Illes Balears"
+  },
+  {
+    "id_aemet_comm": "can",
+    "nam_comm": "Cantabria"
+  },
+  {
+    "id_aemet_comm": "coo",
+    "nam_comm": "Canarias"
+  },
+  {
+    "id_aemet_comm": "cat",
+    "nam_comm": "Cataluña"
+  },
+  {
+    "id_aemet_comm": "ceu",
+    "nam_comm": "Ceuta"
+  },
+  {
+    "id_aemet_comm": "cle",
+    "nam_comm": "Castilla y León"
+  },
+  {
+    "id_aemet_comm": "clm",
+    "nam_comm": "Castilla-La Mancha"
+  },
+  {
+    "id_aemet_comm": "ext",
+    "nam_comm": "Extremadura"
+  },
+  {
+    "id_aemet_comm": "gal",
+    "nam_comm": "Galicia"
+  },
+  {
+    "id_aemet_comm": "mad",
+    "nam_comm": "Comunidad de Madrid"
+  },
+  {
+    "id_aemet_comm": "mel",
+    "nam_comm": "Melilla"
+  },
+  {
+    "id_aemet_comm": "mur",
+    "nam_comm": "Región de Murcia"
+  },
+  {
+    "id_aemet_comm": "nav",
+    "nam_comm": "Comunidad Foral de Navarra"
+  },
+  {
+    "id_aemet_comm": "pva",
+    "nam_comm": "País Vasco"
+  },
+  {
+    "id_aemet_comm": "rio",
+    "nam_comm": "La Rioja"
+  },
+  {
+    "id_aemet_comm": "val",
+    "nam_comm": "Comunitat Valenciana"
+  }
+]

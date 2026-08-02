@@ -1,0 +1,238 @@
+[
+  {
+    "provincia": "Araba/Álava",
+    "aemet__code": "pva"
+  },
+  {
+    "provincia": "Albacete",
+    "aemet__code": "clm"
+  },
+  {
+    "provincia": "Alacant/Alicante",
+    "aemet__code": "val"
+  },
+  {
+    "provincia": "Almería",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "Asturias",
+    "aemet__code": "ast"
+  },
+  {
+    "provincia": "Ávila",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Badajoz",
+    "aemet__code": "ext"
+  },
+  {
+    "provincia": "Barcelona",
+    "aemet__code": "cat"
+  },
+  {
+    "provincia": "Bizkaia",
+    "aemet__code": "pva"
+  },
+  {
+    "provincia": "Burgos",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Cáceres",
+    "aemet__code": "ext"
+  },
+  {
+    "provincia": "Cádiz",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "Cantabria",
+    "aemet__code": "can"
+  },
+  {
+    "provincia": "Castelló/Castellón",
+    "aemet__code": "val"
+  },
+  {
+    "provincia": "Ceuta",
+    "aemet__code": "ceu"
+  },
+  {
+    "provincia": "Ciudad Real",
+    "aemet__code": "clm"
+  },
+  {
+    "provincia": "Córdoba",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "A Coruña",
+    "aemet__code": "gal"
+  },
+  {
+    "provincia": "Cuenca",
+    "aemet__code": "clm"
+  },
+  {
+    "provincia": "Girona",
+    "aemet__code": "cat"
+  },
+  {
+    "provincia": "Granada",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "Guadalajara",
+    "aemet__code": "clm"
+  },
+  {
+    "provincia": "Gipuzkoa",
+    "aemet__code": "pva"
+  },
+  {
+    "provincia": "Huelva",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "Huesca",
+    "aemet__code": "arn"
+  },
+  {
+    "provincia": "Isla de Menorca",
+    "aemet__code": "bal"
+  },
+  {
+    "provincia": "Isla de Mallorca",
+    "aemet__code": "bal"
+  },
+  {
+    "provincia": "Islas de Ibiza y Formentera",
+    "aemet__code": "bal"
+  },
+  {
+    "provincia": "Isla de Lanzarote",
+    "aemet__code": "coo"
+  },
+  {
+    "provincia": "Isla de Fuerteventura",
+    "aemet__code": "coo"
+  },
+  {
+    "provincia": "Isla de Gran Canaria",
+    "aemet__code": "coo"
+  },
+  {
+    "provincia": "Isla de Tenerife",
+    "aemet__code": "coo"
+  },
+  {
+    "provincia": "Isla de La Gomera",
+    "aemet__code": "coo"
+  },
+  {
+    "provincia": "Isla de La Palma",
+    "aemet__code": "coo"
+  },
+  {
+    "provincia": "Isla de El Hierro",
+    "aemet__code": "coo"
+  },
+  {
+    "provincia": "Jaén",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "León",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Lleida",
+    "aemet__code": "cat"
+  },
+  {
+    "provincia": "Lugo",
+    "aemet__code": "gal"
+  },
+  {
+    "provincia": "Madrid",
+    "aemet__code": "mad"
+  },
+  {
+    "provincia": "Málaga",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "Melilla",
+    "aemet__code": "mel"
+  },
+  {
+    "provincia": "Murcia",
+    "aemet__code": "mur"
+  },
+  {
+    "provincia": "Navarra",
+    "aemet__code": "nav"
+  },
+  {
+    "provincia": "Ourense",
+    "aemet__code": "gal"
+  },
+  {
+    "provincia": "Palencia",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Pontevedra",
+    "aemet__code": "gal"
+  },
+  {
+    "provincia": "La Rioja",
+    "aemet__code": "rio"
+  },
+  {
+    "provincia": "Salamanca",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Segovia",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Sevilla",
+    "aemet__code": "and"
+  },
+  {
+    "provincia": "Soria",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Tarragona",
+    "aemet__code": "cat"
+  },
+  {
+    "provincia": "Teruel",
+    "aemet__code": "arn"
+  },
+  {
+    "provincia": "Toledo",
+    "aemet__code": "clm"
+  },
+  {
+    "provincia": "València/Valencia",
+    "aemet__code": "val"
+  },
+  {
+    "provincia": "Valladolid",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Zamora",
+    "aemet__code": "cle"
+  },
+  {
+    "provincia": "Zaragoza",
+    "aemet__code": "arn"
+  }
+]

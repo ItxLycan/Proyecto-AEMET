@@ -2,11 +2,11 @@ import oracledb
 import sys
 
 class OracleClient:
-    def __init__(self, user, password, dsn):
+    def __init__(self):
         """Inicializa los parámetros de configuración de la base de datos."""
-        self.user = user
-        self.password = password
-        self.dsn = dsn
+        self.user = "aemet"
+        self.password = "12345"
+        self.dsn = "localhost:1521/XE"
         self.conexion = None
 
     def connect(self):
