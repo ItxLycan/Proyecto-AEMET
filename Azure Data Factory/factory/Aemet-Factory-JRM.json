@@ -1,0 +1,15 @@
+{
+	"name": "Aemet-Factory-JRM",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "polandcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4e08e548-5c9a-488c-95c6-b53122fbb369",
+		"tenantId": "afa671d5-3427-4f99-abfd-595f78ae09ff"
+	}
+}
