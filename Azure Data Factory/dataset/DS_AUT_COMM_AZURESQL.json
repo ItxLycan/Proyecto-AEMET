@@ -1,0 +1,35 @@
+{
+	"name": "DS_AUT_COMM_AZURESQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseAemet",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID_COMM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ID_AEMET_COMM",
+				"type": "varchar"
+			},
+			{
+				"name": "NAM_COMM",
+				"type": "varchar"
+			},
+			{
+				"name": "DATE_OPRTN_INSERT",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AUT_COMM"
+		}
+	}
+}

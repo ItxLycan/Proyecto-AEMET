@@ -1,0 +1,16 @@
+{
+	"name": "DS_AUT_COMM_ORACLE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BD_AEMET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "AEMET",
+			"table": "AUT_COMM"
+		}
+	}
+}

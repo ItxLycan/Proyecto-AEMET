@@ -1,0 +1,36 @@
+{
+	"name": "DS_PROVINCE_AZURESQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseAemet",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID_PROV",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ID_COMM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "NAM_PROV",
+				"type": "varchar"
+			},
+			{
+				"name": "DATE_OPRTN_INSERT",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PROVINCE"
+		}
+	}
+}
