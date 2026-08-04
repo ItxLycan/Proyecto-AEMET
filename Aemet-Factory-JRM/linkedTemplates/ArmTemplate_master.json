@@ -1,0 +1,91 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Nombre de instancia de Data Factory",
+			"defaultValue": "Aemet-Factory-JRM"
+		},
+		"AzureSqlDatabaseAemet_password": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"password\"de \"AzureSqlDatabaseAemet\""
+		},
+		"BD_AEMET_password": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"password\"de \"BD_AEMET\""
+		},
+		"AzureSqlDatabaseAemet_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "aemet.database.windows.net"
+		},
+		"AzureSqlDatabaseAemet_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "proyecto_aemet"
+		},
+		"AzureSqlDatabaseAemet_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "aemet"
+		},
+		"BD_AEMET_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost:1521/XE"
+		},
+		"BD_AEMET_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "aemet"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI de la cuenta de almacenamiento que contiene las plantillas de ARM vinculadas."
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Token de SAS para la cuenta de almacenamiento que contiene las plantillas de ARM vinculadas"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "Aemet-Factory-JRM_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureSqlDatabaseAemet_password": {
+						"value": "[parameters('AzureSqlDatabaseAemet_password')]"
+					},
+					"BD_AEMET_password": {
+						"value": "[parameters('BD_AEMET_password')]"
+					},
+					"AzureSqlDatabaseAemet_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabaseAemet_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabaseAemet_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabaseAemet_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabaseAemet_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabaseAemet_properties_typeProperties_userName')]"
+					},
+					"BD_AEMET_properties_typeProperties_server": {
+						"value": "[parameters('BD_AEMET_properties_typeProperties_server')]"
+					},
+					"BD_AEMET_properties_typeProperties_username": {
+						"value": "[parameters('BD_AEMET_properties_typeProperties_username')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Aemet-Factory-JRM"
+		},
+		"AzureSqlDatabaseAemet_password": {
+			"value": ""
+		},
+		"BD_AEMET_password": {
+			"value": ""
+		},
+		"AzureSqlDatabaseAemet_properties_typeProperties_server": {
+			"value": "aemet.database.windows.net"
+		},
+		"AzureSqlDatabaseAemet_properties_typeProperties_database": {
+			"value": "proyecto_aemet"
+		},
+		"AzureSqlDatabaseAemet_properties_typeProperties_userName": {
+			"value": "aemet"
+		},
+		"BD_AEMET_properties_typeProperties_server": {
+			"value": "localhost:1521/XE"
+		},
+		"BD_AEMET_properties_typeProperties_username": {
+			"value": "aemet"
+		}
+	}
+}
