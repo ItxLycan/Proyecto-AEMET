@@ -1,0 +1,217 @@
+{
+	"name": "Pipelane Volcado Inicial",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_AUT_COMM",
+				"description": "Pipeline que migrará los datos de Oracle a AzureSQL",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "OracleSource",
+						"partitionOption": "None",
+						"numberPrecision": 38,
+						"numberScale": 18,
+						"queryTimeout": "02:00:00"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "SET IDENTITY_INSERT AUT_COMM ON;",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ID_COMM",
+									"type": "Decimal",
+									"physicalType": "NUMBER"
+								},
+								"sink": {
+									"name": "ID_COMM",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ID_AEMET_COMM",
+									"type": "String",
+									"physicalType": "VARCHAR2"
+								},
+								"sink": {
+									"name": "ID_AEMET_COMM",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "NAM_COMM",
+									"type": "String",
+									"physicalType": "VARCHAR2"
+								},
+								"sink": {
+									"name": "NAM_COMM",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DATE_OPRTN_INSERT",
+									"type": "DateTime",
+									"physicalType": "TIMESTAMP"
+								},
+								"sink": {
+									"name": "DATE_OPRTN_INSERT",
+									"type": "DateTime",
+									"physicalType": "datetime2"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_AUT_COMM_ORACLE",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_AUT_COMM_AZURESQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Copy_PROVINCE",
+				"description": "Pipeline que migrará los datos de Oracle a AzureSQL",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Copy_AUT_COMM",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "OracleSource",
+						"partitionOption": "None",
+						"numberPrecision": 38,
+						"numberScale": 18,
+						"queryTimeout": "02:00:00"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "SET IDENTITY_INSERT PROVINCE ON;",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ID_PROV",
+									"type": "Decimal",
+									"physicalType": "NUMBER"
+								},
+								"sink": {
+									"name": "ID_PROV",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ID_COMM",
+									"type": "Decimal",
+									"physicalType": "NUMBER"
+								},
+								"sink": {
+									"name": "ID_COMM",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "NAM_PROV",
+									"type": "String",
+									"physicalType": "VARCHAR2"
+								},
+								"sink": {
+									"name": "NAM_PROV",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DATE_OPRTN_INSERT",
+									"type": "DateTime",
+									"physicalType": "TIMESTAMP"
+								},
+								"sink": {
+									"name": "DATE_OPRTN_INSERT",
+									"type": "DateTime",
+									"physicalType": "datetime2"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_PROVINCE_ORACLE",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_PROVINCE_AZURESQL",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
